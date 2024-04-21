@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./types", "node_modules/@types"],
+    "target": "ES2020",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "nodenext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./src/",
+    "paths": {
+      "@Assets/*": ["assets/*"],
+      "@Components/*": ["components/*"],
+      "@Context/*": ["context/*"],
+      "@Styles/*": ["styles/*"],
+      "@Types/*": ["types/*"],
+      "@Utils/*": ["utils/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
